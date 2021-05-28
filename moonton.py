@@ -72,7 +72,7 @@ class MOONTON:
 # Please don't remove the author name :( #
 ##########################################
 
-  def auto_upper(self, string):
+  def auto_lower(self, string):
     text = ''.join(
       re.findall(
         '[a-z-A-Z]',
@@ -132,7 +132,7 @@ class MOONTON:
             em = user[
               0
             ]
-            pw = self.auto_upper(
+            pw = self.auto_lower(
               user[
                 1
               ]
